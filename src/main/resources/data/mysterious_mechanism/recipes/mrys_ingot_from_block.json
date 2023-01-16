@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "mysterious_mechanism:mrys_block"
+    }
+  },
+  "result": {
+    "item": "mysterious_mechanism:mrys_ingot",
+    "count": 9
+  }
+}
