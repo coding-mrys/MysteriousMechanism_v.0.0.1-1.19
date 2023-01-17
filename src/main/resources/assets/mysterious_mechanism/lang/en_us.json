@@ -2,7 +2,15 @@
   "item.mysterious_mechanism.mrys_ingot": "Mysterious Ingot",
   "item.mysterious_mechanism.mrys_nugget": "Mysterious Nugget",
   "item.mysterious_mechanism.raw_mrys": "Raw Mysterious Material",
-  "item.mysterious_mechanism.mrys_power": "Mysterious Power",
+
+  "item.mysterious_mechanism.mrys_power": "Mysterious Power 1",
+  "item.mysterious_mechanism.mrys_power2": "Mysterious Power 2",
+  "item.mysterious_mechanism.mrys_power3": "Mysterious Power 3",
+  "item.mysterious_mechanism.mrys_power4": "Mysterious Power 4",
+  "item.mysterious_mechanism.mrys_power5": "Mysterious Power 5",
+  "item.mysterious_mechanism.mrys_power6": "Mysterious Power 6",
+  "item.mysterious_mechanism.mrys_power7": "Mysterious Power 7",
+
 
   "block.mysterious_mechanism.mrys_block": "Block of the Mysterious",
   "block.mysterious_mechanism.mrys_ore": "Mysterious Ore",
