@@ -2,9 +2,11 @@
   "item.mysterious_mechanism.mrys_ingot": "Mysterious Ingot",
   "item.mysterious_mechanism.mrys_nugget": "Mysterious Nugget",
   "item.mysterious_mechanism.raw_mrys": "Raw Mysterious Material",
+  "item.mysterious_mechanism.mrys_power": "Mysterious Power",
 
   "block.mysterious_mechanism.mrys_block": "Block of the Mysterious",
   "block.mysterious_mechanism.mrys_ore": "Mysterious Ore",
+  "block.mysterious_mechanism.gravity_block": "Gravity Block",
 
   "itemGroup.mysterious_tab": "Mysterious Mechanism"
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "mysterious_mechanism:block/gravity_block"
+  }
+}
