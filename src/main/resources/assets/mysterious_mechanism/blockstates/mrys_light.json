@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "light=true": {"model": "mysterious_mechanism:block/mrys_light_on"},
+    "light=false": {"model": "mysterious_mechanism:block/mrys_light_off"}
+  }
+}
