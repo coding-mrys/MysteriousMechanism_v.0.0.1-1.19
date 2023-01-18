@@ -2,9 +2,12 @@ package net.mrys.mysterious_mechanism.item.custom;
 
 
 import com.mojang.blaze3d.shaders.Effect;
+import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.font.glyphs.BakedGlyph;
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.renderer.EffectInstance;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -13,20 +16,23 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.fluids.FluidActionResult;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class mrys_power extends Item {
     public mrys_power(Properties properties) {
         super(properties);
     }
 
+    int a = 50;
+    int b = 5;
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-
-        int a = 50;
-        int b = 5;
 
         if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND){
 
@@ -39,6 +45,23 @@ public class mrys_power extends Item {
         }
 
         return super.use(level, player, hand);
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
+
+        if(Screen.hasShiftDown()){
+            components.add(Component
+                    .literal("'right click' to use this Item.\nIt will give you a power boost!\nstats: "+a+"/"+b)
+                    .withStyle(ChatFormatting.GREEN));
+
+        }else{
+            components.add(Component
+                    .literal("'shift' for more informations")
+                    .withStyle(ChatFormatting.AQUA));
+        }
+
+        super.appendHoverText(stack, level, components, flag);
     }
 
     @Override

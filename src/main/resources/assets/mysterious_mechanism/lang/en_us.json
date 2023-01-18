@@ -2,6 +2,7 @@
   "item.mysterious_mechanism.mrys_ingot": "Mysterious Ingot",
   "item.mysterious_mechanism.mrys_nugget": "Mysterious Nugget",
   "item.mysterious_mechanism.raw_mrys": "Raw Mysterious Material",
+  "item.mysterious_mechanism.mrys_mask": "Mysterious Mask",
 
   "item.mysterious_mechanism.mrys_power": "Mysterious Power 1",
   "item.mysterious_mechanism.mrys_power2": "Mysterious Power 2",
@@ -16,5 +17,7 @@
   "block.mysterious_mechanism.mrys_ore": "Mysterious Ore",
   "block.mysterious_mechanism.gravity_block": "Gravity Block",
 
-  "itemGroup.mysterious_tab": "Mysterious Mechanism"
+  "itemGroup.mysterious_tab": "Mysterious Mechanism - materials",
+  "itemGroup.mysterious_tab2": "Mysterious Mechanism - power",
+  "itemGroup.mysterious_tab3": "Mysterious Mechanism - technology"
 }

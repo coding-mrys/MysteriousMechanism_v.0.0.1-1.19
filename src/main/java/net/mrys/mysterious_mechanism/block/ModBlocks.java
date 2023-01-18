@@ -32,7 +32,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> GRAVITY_BLOCK = registerBlock("gravity_block",
             ()-> new gravity_block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(12f).requiresCorrectToolForDrops()), ModCreativeModeTab.MYSTERIOUS_TAB);
+                    .strength(12f).requiresCorrectToolForDrops()), ModCreativeModeTab.MYSTERIOUS_TAB3);
     //
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T>block, CreativeModeTab tab){
