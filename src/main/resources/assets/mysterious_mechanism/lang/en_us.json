@@ -25,5 +25,7 @@
   "itemGroup.mysterious_tab": "Mysterious Mechanism - materials",
   "itemGroup.mysterious_tab2": "Mysterious Mechanism - power",
   "itemGroup.mysterious_tab3": "Mysterious Mechanism - technology",
-  "itemGroup.mysterious_tab4": "Mysterious Mechanism - farming"
+  "itemGroup.mysterious_tab4": "Mysterious Mechanism - farming",
+
+  "entity.minecraft.villager.mysterious_mechanism.scientist": "Mysterious Scientist"
 }

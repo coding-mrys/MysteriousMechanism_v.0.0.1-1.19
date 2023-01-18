@@ -12,6 +12,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.mrys.mysterious_mechanism.block.ModBlocks;
 import net.mrys.mysterious_mechanism.item.ModItems;
+import net.mrys.mysterious_mechanism.villager.ModVillagers;
+import net.mrys.mysterious_mechanism.world.feature.ModConfiguredFeatures;
+import net.mrys.mysterious_mechanism.world.feature.ModPlacedFeatures;
 import org.slf4j.Logger;
 
 @Mod(mysterious_mechanism.MOD_ID)
@@ -23,6 +26,9 @@ public class mysterious_mechanism {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModVillagers.register(modEventBus);
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -30,6 +36,9 @@ public class mysterious_mechanism {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            ModVillagers.registerPOIs();
+        });
     }
 
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
