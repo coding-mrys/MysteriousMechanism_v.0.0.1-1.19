@@ -27,4 +27,11 @@ public class ModCreativeModeTab {
             return new ItemStack(ModBlocks.GRAVITY_BLOCK.get());
         }
     };
+
+    public static final CreativeModeTab MYSTERIOUS_TAB4 = new CreativeModeTab("mysterious_tab4") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.MRYS_FRUIT.get());
+        }
+    };
 }

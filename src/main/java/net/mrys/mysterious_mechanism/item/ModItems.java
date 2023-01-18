@@ -1,10 +1,13 @@
 package net.mrys.mysterious_mechanism.item;
 
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.mrys.mysterious_mechanism.block.ModBlocks;
 import net.mrys.mysterious_mechanism.item.custom.*;
 import net.mrys.mysterious_mechanism.mysterious_mechanism;
 
@@ -24,6 +27,17 @@ public class ModItems {
 
     public static final RegistryObject<Item>MRYS_MASK = ITEMS.register("mrys_mask",
             ()-> new Item(new Item.Properties().tab(ModCreativeModeTab.MYSTERIOUS_TAB2)));
+
+    //FARM
+    public static final RegistryObject<Item>MRYS_SEEDS = ITEMS.register("mrys_seeds",
+            ()-> new ItemNameBlockItem(ModBlocks.MRYS_FARMLAND.get(),
+                    new Item.Properties().tab(ModCreativeModeTab.MYSTERIOUS_TAB4)));
+
+    public static final RegistryObject<Item>MRYS_FRUIT = ITEMS.register("mrys_fruit",
+            ()-> new Item(new Item.Properties().tab(ModCreativeModeTab.MYSTERIOUS_TAB4)
+                    .food(new FoodProperties.Builder().nutrition(40).saturationMod(2f).build()))
+    );
+    //MRYS POWER
 
     public static final RegistryObject<Item>MRYS_POWER = ITEMS.register("mrys_power",
             ()-> new mrys_power(new Item.Properties().tab(ModCreativeModeTab.MYSTERIOUS_TAB2).stacksTo(1)));

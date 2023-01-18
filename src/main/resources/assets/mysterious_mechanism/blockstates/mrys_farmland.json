@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "age=0": {"model": "mysterious_mechanism:block/mrys_fruit0"},
+    "age=1": {"model": "mysterious_mechanism:block/mrys_fruit1"},
+    "age=2": {"model": "mysterious_mechanism:block/mrys_fruit2"},
+    "age=3": {"model": "mysterious_mechanism:block/mrys_fruit3"},
+    "age=4": {"model": "mysterious_mechanism:block/mrys_fruit4"},
+    "age=5": {"model": "mysterious_mechanism:block/mrys_fruit5"},
+    "age=6": {"model": "mysterious_mechanism:block/mrys_fruit6"}
+  }
+}

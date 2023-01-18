@@ -12,6 +12,10 @@
   "item.mysterious_mechanism.mrys_power6": "Mysterious Power 6",
   "item.mysterious_mechanism.mrys_power7": "Mysterious Power 7",
 
+  "item.mysterious_mechanism.mrys_seeds": "Mysterious Seeds",
+  "item.mysterious_mechanism.mrys_fruit": "Mysterious Fruit",
+
+  "block.mysterious_mechanism.mrys_farmland": "Mysterious Farmland",
 
   "block.mysterious_mechanism.mrys_block": "Block of the Mysterious",
   "block.mysterious_mechanism.mrys_ore": "Mysterious Ore",
@@ -20,5 +24,6 @@
 
   "itemGroup.mysterious_tab": "Mysterious Mechanism - materials",
   "itemGroup.mysterious_tab2": "Mysterious Mechanism - power",
-  "itemGroup.mysterious_tab3": "Mysterious Mechanism - technology"
+  "itemGroup.mysterious_tab3": "Mysterious Mechanism - technology",
+  "itemGroup.mysterious_tab4": "Mysterious Mechanism - farming"
 }

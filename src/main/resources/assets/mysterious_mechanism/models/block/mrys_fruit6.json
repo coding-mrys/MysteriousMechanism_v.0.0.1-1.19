@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "mysterious_mechanism:block/mrys_fruit6"
+  }
+}

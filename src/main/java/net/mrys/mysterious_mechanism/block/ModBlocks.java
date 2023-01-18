@@ -4,6 +4,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -11,6 +12,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.mrys.mysterious_mechanism.block.custom.gravity_block;
+import net.mrys.mysterious_mechanism.block.custom.mrys_farmland;
 import net.mrys.mysterious_mechanism.block.custom.mrys_light;
 import net.mrys.mysterious_mechanism.item.ModCreativeModeTab;
 import net.mrys.mysterious_mechanism.item.ModItems;
@@ -39,6 +41,9 @@ public class ModBlocks {
             ()-> new mrys_light(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(10f).requiresCorrectToolForDrops()
                     .lightLevel(state -> state.getValue(mrys_light.LIGHT)? 15 : 0)), ModCreativeModeTab.MYSTERIOUS_TAB3);
+
+    public static final RegistryObject<Block> MRYS_FARMLAND = BLOCKS.register("mrys_farmland",
+            ()-> new mrys_farmland(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
     //
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T>block, CreativeModeTab tab){
