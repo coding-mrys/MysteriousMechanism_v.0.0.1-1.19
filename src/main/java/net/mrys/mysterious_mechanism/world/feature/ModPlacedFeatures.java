@@ -16,7 +16,8 @@ public class ModPlacedFeatures {
 
 
     public static final RegistryObject<PlacedFeature> MRYS_ORE_PLACED = PLACED_FEATURES.register("mrys_ore_placed",
-            () -> new PlacedFeature(ModConfiguredFeatures.MRYS_ORE.getHolder().get(), commonOrePlacement(20,
+            () -> new PlacedFeature(ModConfiguredFeatures.MRYS_ORE.getHolder().get(),
+                    commonOrePlacement(4,
                             HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80)))));
 
     public static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_) {

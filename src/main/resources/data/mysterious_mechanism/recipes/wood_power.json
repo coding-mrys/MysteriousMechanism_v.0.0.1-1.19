@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#/#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:oak_log"
+    },
+    "/": {
+      "item": "mysterious_mechanism:mrys_mask"
+    }
+  },
+  "result": {
+    "item": "mysterious_mechanism:mrys_power",
+    "count": 1
+  }
+}

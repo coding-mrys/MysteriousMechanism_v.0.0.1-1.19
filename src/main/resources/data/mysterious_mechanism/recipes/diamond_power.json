@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#/#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:diamond"
+    },
+    "/": {
+      "item": "mysterious_mechanism:mrys_power4"
+    }
+  },
+  "result": {
+    "item": "mysterious_mechanism:mrys_power5",
+    "count": 1
+  }
+}
