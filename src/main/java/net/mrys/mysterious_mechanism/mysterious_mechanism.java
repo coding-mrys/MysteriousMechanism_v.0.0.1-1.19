@@ -1,6 +1,7 @@
 package net.mrys.mysterious_mechanism;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.common.MinecraftForge;
@@ -11,9 +12,12 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.mrys.mysterious_mechanism.block.ModBlocks;
+import net.mrys.mysterious_mechanism.block.entity.ModBlockEntities;
 import net.mrys.mysterious_mechanism.fluid.ModFluidTypes;
 import net.mrys.mysterious_mechanism.fluid.ModFluids;
 import net.mrys.mysterious_mechanism.item.ModItems;
+import net.mrys.mysterious_mechanism.screen.ModMenuTypes;
+import net.mrys.mysterious_mechanism.screen.MrysChargerScreen;
 import net.mrys.mysterious_mechanism.villager.ModVillagers;
 import net.mrys.mysterious_mechanism.world.feature.ModConfiguredFeatures;
 import net.mrys.mysterious_mechanism.world.feature.ModPlacedFeatures;
@@ -33,6 +37,8 @@ public class mysterious_mechanism {
         ModPlacedFeatures.register(modEventBus);
         ModFluids.register(modEventBus);
         ModFluidTypes.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -52,6 +58,8 @@ public class mysterious_mechanism {
             ItemBlockRenderTypes.setRenderLayer(ModBlocks.MRYS_FARMLAND.get(), RenderType.cutout());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_MRYS_FLUID.get(),RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_MRYS_FLUID.get(),RenderType.translucent());
+
+            MenuScreens.register(ModMenuTypes.MRYS_CHARGER_MENU.get(), MrysChargerScreen::new);
         }
     }
 }
