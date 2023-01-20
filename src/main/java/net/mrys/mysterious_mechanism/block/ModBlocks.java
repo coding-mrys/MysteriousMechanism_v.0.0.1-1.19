@@ -7,6 +7,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -16,6 +17,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.mrys.mysterious_mechanism.block.custom.gravity_block;
 import net.mrys.mysterious_mechanism.block.custom.mrys_farmland;
 import net.mrys.mysterious_mechanism.block.custom.mrys_light;
+import net.mrys.mysterious_mechanism.fluid.ModFluids;
 import net.mrys.mysterious_mechanism.item.ModCreativeModeTab;
 import net.mrys.mysterious_mechanism.item.ModItems;
 import net.mrys.mysterious_mechanism.mysterious_mechanism;
@@ -38,16 +40,21 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> GRAVITY_BLOCK = registerBlock("gravity_block",
             ()-> new gravity_block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(12f).requiresCorrectToolForDrops()), ModCreativeModeTab.MYSTERIOUS_TAB3);
+                    .strength(8f).requiresCorrectToolForDrops()), ModCreativeModeTab.MYSTERIOUS_TAB3);
 
     public static final RegistryObject<Block> MRYS_LIGHT = registerBlock("mrys_light",
             ()-> new mrys_light(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(10f).requiresCorrectToolForDrops()
+                    .strength(5f).requiresCorrectToolForDrops()
                     .lightLevel(state -> state.getValue(mrys_light.LIGHT)? 15 : 0)), ModCreativeModeTab.MYSTERIOUS_TAB3);
 
     public static final RegistryObject<Block> MRYS_FARMLAND = BLOCKS.register("mrys_farmland",
             ()-> new mrys_farmland(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
     //
+
+    //FLUID
+    public static final RegistryObject<LiquidBlock> MRYS_FLUID_BLOCK = BLOCKS.register("mrys_fluid_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_MRYS_FLUID,BlockBehaviour.Properties.copy(Blocks.WATER)));
+
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T>block, CreativeModeTab tab){
         RegistryObject<T> toReturn = BLOCKS.register(name,block);

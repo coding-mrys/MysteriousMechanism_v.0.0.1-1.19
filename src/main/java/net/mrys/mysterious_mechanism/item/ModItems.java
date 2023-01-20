@@ -1,13 +1,13 @@
 package net.mrys.mysterious_mechanism.item;
 
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.mrys.mysterious_mechanism.block.ModBlocks;
+import net.mrys.mysterious_mechanism.fluid.ModFluids;
 import net.mrys.mysterious_mechanism.item.custom.*;
 import net.mrys.mysterious_mechanism.mysterious_mechanism;
 
@@ -54,8 +54,17 @@ public class ModItems {
     public static final RegistryObject<Item>MRYS_POWER7 = ITEMS.register("mrys_power7",
             ()-> new mrys_power7(new Item.Properties().tab(ModCreativeModeTab.MYSTERIOUS_TAB2).stacksTo(1)));
 
-    //
+    //FLUIDS
+    public static final RegistryObject<Item>MRYS_FLUID_BUCKET = ITEMS.register("mrys_fluid_bucket",
+            ()-> new BucketItem(ModFluids.SOURCE_MRYS_FLUID,
+                    new Item.Properties().tab(ModCreativeModeTab.MYSTERIOUS_TAB).craftRemainder(Items.BUCKET).stacksTo(1)));
+
+    //SWORD
+    public static final RegistryObject<Item>MRYS_SWORD = ITEMS.register("mrys_sword",
+            ()-> new SwordItem(Tiers.NETHERITE,15,6f, new Item.Properties().tab(ModCreativeModeTab.MYSTERIOUS_TAB5).stacksTo(1)));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
+
 }

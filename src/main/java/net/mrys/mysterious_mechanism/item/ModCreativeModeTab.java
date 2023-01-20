@@ -34,4 +34,11 @@ public class ModCreativeModeTab {
             return new ItemStack(ModItems.MRYS_FRUIT.get());
         }
     };
+
+    public static final CreativeModeTab MYSTERIOUS_TAB5 = new CreativeModeTab("mysterious_tab5") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.MRYS_SWORD.get());
+        }
+    };
 }

@@ -12,8 +12,12 @@
   "item.mysterious_mechanism.mrys_power6": "Mysterious Power 6",
   "item.mysterious_mechanism.mrys_power7": "Mysterious Power 7",
 
+  "item.mysterious_mechanism.mrys_sword": "Mysterious Sword",
+
   "item.mysterious_mechanism.mrys_seeds": "Mysterious Seeds",
   "item.mysterious_mechanism.mrys_fruit": "Mysterious Fruit",
+
+  "item.mysterious_mechanism.mrys_fluid_bucket": "Bucket of Mysterious Fluid",
 
   "block.mysterious_mechanism.mrys_farmland": "Mysterious Farmland",
 
@@ -26,6 +30,9 @@
   "itemGroup.mysterious_tab2": "Mysterious Mechanism - power",
   "itemGroup.mysterious_tab3": "Mysterious Mechanism - technology",
   "itemGroup.mysterious_tab4": "Mysterious Mechanism - farming",
+  "itemGroup.mysterious_tab5": "Mysterious Mechanism - swords and armor",
+
+
 
   "entity.minecraft.villager.mysterious_mechanism.scientist": "Mysterious Scientist"
 }
