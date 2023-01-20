@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "mysterious_mechanism:mrys_block",
-    "mysterious_mechanism:mrys_ore"
+    "mysterious_mechanism:mrys_ore",
+    "mysterious_mechanism:mrys_crystal"
   ]
 }

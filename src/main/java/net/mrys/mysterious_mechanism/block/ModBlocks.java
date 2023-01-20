@@ -17,6 +17,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.mrys.mysterious_mechanism.block.custom.gravity_block;
 import net.mrys.mysterious_mechanism.block.custom.mrys_farmland;
 import net.mrys.mysterious_mechanism.block.custom.mrys_light;
+import net.mrys.mysterious_mechanism.block.custom.mrys_charger;
 import net.mrys.mysterious_mechanism.fluid.ModFluids;
 import net.mrys.mysterious_mechanism.item.ModCreativeModeTab;
 import net.mrys.mysterious_mechanism.item.ModItems;
@@ -46,6 +47,14 @@ public class ModBlocks {
             ()-> new mrys_light(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(5f).requiresCorrectToolForDrops()
                     .lightLevel(state -> state.getValue(mrys_light.LIGHT)? 15 : 0)), ModCreativeModeTab.MYSTERIOUS_TAB3);
+
+    public static final RegistryObject<Block> MRYS_CHARGER = registerBlock("mrys_charger",
+            ()-> new mrys_charger(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(8f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.MYSTERIOUS_TAB3);
+
+    public static final RegistryObject<Block> MRYS_CRYSTAL = registerBlock("mrys_crystal",
+            ()-> new mrys_charger(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(8f).requiresCorrectToolForDrops().noOcclusion()), ModCreativeModeTab.MYSTERIOUS_TAB);
 
     public static final RegistryObject<Block> MRYS_FARMLAND = BLOCKS.register("mrys_farmland",
             ()-> new mrys_farmland(BlockBehaviour.Properties.copy(Blocks.WHEAT)));

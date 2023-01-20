@@ -63,6 +63,11 @@ public class ModItems {
     public static final RegistryObject<Item>MRYS_SWORD = ITEMS.register("mrys_sword",
             ()-> new SwordItem(Tiers.NETHERITE,15,6f, new Item.Properties().tab(ModCreativeModeTab.MYSTERIOUS_TAB5).stacksTo(1)));
 
+    //Crystal
+    public static final RegistryObject<Item>MRYS_CRYSTAL_SHARD = ITEMS.register("mrys_crystal_shard",
+            ()-> new Item(new Item.Properties().tab(ModCreativeModeTab.MYSTERIOUS_TAB)));
+
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

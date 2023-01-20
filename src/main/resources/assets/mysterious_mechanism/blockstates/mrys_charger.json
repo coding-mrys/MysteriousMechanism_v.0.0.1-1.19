@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mysterious_mechanism:block/mrys_charger"
+    },
+    "facing=south": {
+      "model": "mysterious_mechanism:block/mrys_charger",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mysterious_mechanism:block/mrys_charger",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "mysterious_mechanism:block/mrys_charger",
+      "y": 90
+    }
+  }
+}
